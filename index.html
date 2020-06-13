@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StartCraft</title>
+    <link rel="stylesheet" href="cloaking.js" />
+  </head>
+  <body>
+    <img id="cloaking" src="images/cloaking.png" alt="cloaking" />
+    <img id="wraith" src="images/wraith.png" alt="wraith" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("#cloaking").click(function () {
+          $("#wraith").fadeToggle();
+        });
+      });
+    </script>
+  </body>
+</html>
